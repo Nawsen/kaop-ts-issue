@@ -1,0 +1,9 @@
+= Error
+
+When executing `npm run build` the following error appears. AOT has been enabled for the build.
+
+....
+ERROR in Error during template compile of 'AppComponent'
+  Function calls are not supported in decorators but 'beforeMethod' was called in 'log'
+    'log' calls 'beforeMethod' at src\app\kaop-test.ts(4,10).
+....
