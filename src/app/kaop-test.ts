@@ -1,7 +1,4 @@
-import { beforeMethod } from 'kaop-ts';
 
-export function log() {
-  return beforeMethod(meta => {
-    console.log('annotation logging...');
-  });
+export const log = meta => {
+  console.log('annotation logging...');
 }

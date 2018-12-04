@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { log } from './kaop-test';
+import { beforeMethod } from 'kaop-ts';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { log } from './kaop-test';
 export class AppComponent {
   title = 'kaop-test';
 
-  @log()
+  @beforeMethod(log)
   decoratorTest(testString: string): void {
     console.log('hello');
   }
